@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82C34123-064D-4245-8D90-CB4A03C0175B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>project_management.My.MyApplication</StartupObject>
+    <RootNamespace>project_management</RootNamespace>
+    <AssemblyName>project_management</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>project_management.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>project_management.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_project.Designer.vb">
+      <DependentUpon>add_project.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_project.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_task.Designer.vb">
+      <DependentUpon>add_task.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_task.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assign_Form.Designer.vb">
+      <DependentUpon>assign_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="assign_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_employee.Designer.vb">
+      <DependentUpon>edit_employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit_employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_project.Designer.vb">
+      <DependentUpon>edit_project.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit_project.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_task.Designer.vb">
+      <DependentUpon>edit_task.vb</DependentUpon>
+    </Compile>
+    <Compile Include="edit_task.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_employee.Designer.vb">
+      <DependentUpon>add_employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_index.Designer.vb">
+      <DependentUpon>main_index.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main_index.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="add_project.resx">
+      <DependentUpon>add_project.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_task.resx">
+      <DependentUpon>add_task.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assign_Form.resx">
+      <DependentUpon>assign_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_employee.resx">
+      <DependentUpon>edit_employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_project.resx">
+      <DependentUpon>edit_project.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_task.resx">
+      <DependentUpon>edit_task.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_employee.resx">
+      <DependentUpon>add_employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_index.resx">
+      <DependentUpon>main_index.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\add_employee.datasource" />
+    <None Include="My Project\DataSources\add_project.datasource" />
+    <None Include="My Project\DataSources\add_task.datasource" />
+    <None Include="My Project\DataSources\edit_employee.datasource" />
+    <None Include="My Project\DataSources\edit_project.datasource" />
+    <None Include="My Project\DataSources\edit_task.datasource" />
+    <None Include="My Project\DataSources\index.datasource" />
+    <None Include="My Project\DataSources\login.datasource" />
+    <None Include="My Project\DataSources\main_Form1.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="thisisengineering-raeng-ZPeXrWxOjRQ-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="marvin-meyer-SYTO3xs06fU-unsplash.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
